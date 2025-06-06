@@ -1,0 +1,10 @@
+services:
+  java-application:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: java-app-image
+    container_name: java-app
+    ports:
+      - "8000:8000"
+
