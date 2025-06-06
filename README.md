@@ -1,4 +1,3 @@
-# Java Motivational Quotes App
 
 This project is a simple Java-based HTTP server that serves random motivational quotes via a REST API. The quotes are externalized to a `quotes.txt` file for easy customization.
 
@@ -66,3 +65,6 @@ This project is licensed under the MIT License.
 [TrainWithShubham](https://github.com/LondheShubham153)
 
 
+=======
+# Java-App
+it is java quotes application
