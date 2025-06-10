@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+
+metadata:
+  name: java-pod
+  namespace: java-ns
+
+spec:
+  containers:
+  - name: java-pod
+    image: priyanshijat6701/java-image-app
+    ports:
+    - containerPort: 8000

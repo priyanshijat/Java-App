@@ -1,0 +1,28 @@
+kind: Deployment
+apiVersion: apps/v1
+
+metadata:
+  name: java-deployment
+  namespace: java-ns
+  labels:
+    app: java-app
+
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: java-app
+
+  template:
+    metadata:
+      name: java-pod
+      namespace: java-ns
+      labels:
+        app: java-app
+
+    spec:
+      containers:
+      - name: java-app
+        image: priyanshijat6701/java-image-app
+        ports:
+          - containerPort: 8000
